@@ -5,5 +5,7 @@
 
 int main(void)
 {
+	
+	printf("toto");
     return 0;
 }
