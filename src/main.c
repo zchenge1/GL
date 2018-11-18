@@ -5,11 +5,7 @@
 #include "stdlib.h"
 #define constanteS3 12
 
- int i;
- int val_rand;
-
-  
- int rand (void);
+//mes variable sont dans header.h
 
 void main(void)
 {
@@ -37,25 +33,19 @@ unsigned long int calculer_S1(void)
 unsigned long int calculer_N2max(void)
  {
 	N=0; 
-	while(N<100)
+	while(3*N<9876)
     {   
-		if (S2<=9876)
-		{
         S2 = S2 + 3*N;
-        N = N + 1;
-		N2max=N2max+1;  
-		}
-		else 
-			N=100;
-    }
-	return N2max;
+        N = N + 1;			   		
+	}
+	return N;
  }
 
 unsigned long int calculer_somme_S3(void)
 {
    int valeur_stock=0;
 	
-	for(i=0;i<=constanteS3;i++)
+	for(i=0;i<constanteS3;i++)
 	{
 	val_rand= rand()%10+1;
 	
