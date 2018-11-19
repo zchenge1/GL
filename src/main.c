@@ -14,7 +14,7 @@ void main(void)
 	calculer_S1();
 	calculer_N2max();
 	calculer_somme_S3(); 
-
+	calculer_S4();
 	N=50;
 
 }
@@ -55,4 +55,24 @@ unsigned long int calculer_somme_S3(void)
 	S3= valeur_stock;
 	
 	return S3; 
+}
+
+
+unsigned long int calculer_S4(void)
+{
+   N=0;
+   char if_valide=0;
+   
+	
+	while(if_valide<=20)
+	{
+		N=N+1;
+		if( (N%3 == 0) || (N%7 == 0) )
+		{
+			if_valide=if_valide+1;
+		}
+	
+	}
+
+	return N;
 }

@@ -20,5 +20,6 @@
 unsigned long int calculer_S1(void); 
 unsigned long int calculer_N2max(void);
 unsigned long int calculer_somme_S3(void);
+unsigned long int calculer_S4(void);
 
 #endif
