@@ -8,16 +8,20 @@
 #define SEUILH 200
 #define SEUILB -100
 
+unsigned char i, n;
+
 
 unsigned char bin[10]={0,1,2,3,4,5,6,7,8,9};
 unsigned char sat[10]={0,1,2,3,4,5,6,7,8,9};
 unsigned char dist[10]={12,23,56,78,100,120,156,189,201,250};
-int i;
+unsigned char A[6]={0,1,5,9,8,11};
+unsigned char B[5]={0,1,2,3,4};
+
 
 void tab_bin(void);
 void tab_sat(void);
 void tab_dist(void);
-
+void recopier_tabA_invers_dans_tabB(void);
 
 int main(void)
 {
@@ -25,7 +29,8 @@ int main(void)
 	
 	tab_bin();
 	tab_sat();
-	tab_dist(); 
+	tab_dist();
+	recopier_tabA_invers_dans_tabB();
     return 0;
 }
 
@@ -73,4 +78,15 @@ void tab_dist(void)
 	 dist[i] = dist[i] - dist[i-1];
 		
 	} 	
+}
+
+void recopier_tabA_invers_dans_tabB(void)
+{
+
+    for ( i=5, n=0 ; i>0 ; i--, n++)
+	{
+		B[n]=A[i];
+		
+	}
+	
 }
