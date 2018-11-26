@@ -19,25 +19,25 @@ unsigned char A[6]={0,1,5,9,8,11};
 unsigned char B[5]={0,1,2,3,4};
 unsigned char miroir[N]={0,1,2,3,4,5,6,7,8,9};  
 
-void tab_bin(void);
-void tab_sat(void);
-void tab_dist(void);
-void recopier_tabA_invers_dans_tabB(void);
-void tab_miroir(void);
+void tab_bin(unsigned char bin[10]);
+void tab_sat(unsigned char sat[10]);
+void tab_dist(unsigned char dist[10]);
+void recopier_tabA_invers_dans_tabB(unsigned char A[6], unsigned char B[5]);
+void tab_miroir(unsigned char miroir[N]);
 
 int main(void)
 {
 	srand(time(NULL));
 	
-	tab_bin();
-	tab_sat();
-	tab_dist();
-	recopier_tabA_invers_dans_tabB();
-	tab_miroir();
+	tab_bin(bin);
+	tab_sat(sat);
+	tab_dist(dist);
+	recopier_tabA_invers_dans_tabB(A,B);
+	tab_miroir(miroir);
     return 0;
 }
 
-void tab_bin(void)
+void tab_bin(unsigned char bin[10])
 {
 	for (i=0;i<10;i++)
 	{
@@ -52,7 +52,7 @@ void tab_bin(void)
 }
 
 
-void tab_sat(void)
+void tab_sat(unsigned char sat[10])
 {
 	int val_rand=0;
 		
@@ -74,7 +74,7 @@ void tab_sat(void)
 	
 }
 
-void tab_dist(void)
+void tab_dist(unsigned char dist[10])
 {
    for (i=1;i<10;i++)
 	{
@@ -83,7 +83,7 @@ void tab_dist(void)
 	} 	
 }
 
-void recopier_tabA_invers_dans_tabB(void)
+void recopier_tabA_invers_dans_tabB(unsigned char A[6], unsigned char B[5])
 {
 
     for ( i=5, n=0 ; i>0 ; i--, n++)
@@ -94,7 +94,7 @@ void recopier_tabA_invers_dans_tabB(void)
 	
 }
 
-void tab_miroir(void)
+void tab_miroir(unsigned char miroir[N])
 {
  moit=N/2;
  
