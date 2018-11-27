@@ -3,6 +3,7 @@
 
 #include <ansi_c.h>
 #include "my_header.h"
+#include "TP_lib_suite.h"
 
 unsigned char comb_prefe[6]={0,3,7,12,2,30};
 unsigned char tirage_loto[6]={1,3,2,12,4,9};
