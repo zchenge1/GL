@@ -24,6 +24,8 @@ int main(void)
     return 0;
 }
 
+
+
 void comparer_les_2_tab(unsigned char comb_pref[6],unsigned char tirage_loto[6])
 {
 
@@ -53,12 +55,11 @@ void comparer_les_2_tab_libreri(unsigned char comb_prefe[6],unsigned char tirage
 	
 	for (i=0;i<6;i++)
  	{
-	 comb_prefe[i];
+		N= tirerNumero();
+		tirage_loto_alea[i]=N;
 	 	for (j=0;j<6;j++)
 	 	{
-			N= tirerNumero();
-			tirage_loto_alea[j]=N; 
-		
+			 comb_prefe[j];
 				if(comb_prefe[i]==tirage_loto_alea[j])
 				{
 					C_egal=C_egal+1;
@@ -85,11 +86,12 @@ void comparer_tirage100(unsigned char comb_prefe[6],unsigned char tirage_loto_al
 		 tirage=0;
 			for (i=0;i<6;i++)
  			{
-	 		comb_prefe[i];
+				n= tirerNumero();
+				tirage_loto_alea[i]=n;
+	 		
 	 			for (j=0;j<6;j++)
 	 			{
-					n= tirerNumero();
-					tirage_loto_alea[j]=n; 
+ 					  comb_prefe[j];
 		
 						if(comb_prefe[i]==tirage_loto_alea[j])
 						{
