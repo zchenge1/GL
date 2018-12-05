@@ -7,7 +7,7 @@
 
 int main(void)
 {
- char info[100];//="je appelle Lea Dupont et 19 ans";
+ char info[100];
  
  char prenom[100];
  char nom[100];
@@ -22,9 +22,6 @@ int main(void)
 	scanf("%d",&age);
 	
  	sprintf(info,"je m'appelle %s %s et j'ai %d ans",prenom,nom,age);
-    //sprintf(info,"je appelle Lea Dupont et 19 ans");
 	sscanf(info,"%*s %*s %s %s %*s %d %*s",prenom,nom,&age);
-	
-  //scanf(info,"%*s %*s %s %s %*s %d %*s",prenom,nom,&age);
     return 0;
 }
