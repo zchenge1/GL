@@ -7,12 +7,13 @@
 
 int main(void)
 {
- char info[100]="je appelle Lea Dupont et 19 ans";
+ char info[100];//="je appelle Lea Dupont et 19 ans";
  
  char prenom[100];
  char nom[100];
  unsigned int age;
  
+    sprintf(info,"je appelle Lea Dupont et 19 ans");
 	sscanf(info,"%*s %*s %s %s %*s %d %*s",prenom,nom,&age);
 	
   //scanf(info,"%*s %*s %s %s %*s %d %*s",prenom,nom,&age);
