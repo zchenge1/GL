@@ -23,5 +23,7 @@ int main(void)
 	
  	sprintf(info,"je m'appelle %s %s et j'ai %d ans",prenom,nom,age);
 	sscanf(info,"%*s %*s %s %s %*s %d %*s",prenom,nom,&age);
+	printf("%s",info);
     return 0;
 }
+
